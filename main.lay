@@ -1,0 +1,34 @@
+LAYOUT(MainLayout, 820, 584)
+	ITEM(Upp::Label, m_ctrlLblFilter, SetLabel(t_("Filter:")).LeftPosZ(8, 36).TopPosZ(8, 19))
+	ITEM(Upp::DropList, m_ctrlFilter, LeftPosZ(48, 164).TopPosZ(8, 19))
+	ITEM(Upp::Label, m_ctrlLblFilterInfo, HSizePosZ(220, 8).TopPosZ(8, 19))
+	ITEM(Upp::ArrayCtrl, m_ctrlParams, HSizePosZ(8, 8).TopPosZ(32, 188))
+	ITEM(Upp::Label, m_ctrlLblFilePattern, SetLabel(t_("File Pattern:")).HSizePosZ(8, 580).TopPosZ(232, 19))
+	ITEM(Upp::EditString, m_ctrlFilePattern, HSizePosZ(68, 220).TopPosZ(232, 19))
+	ITEM(Upp::Label, m_ctrlLblOutPattern, SetLabel(t_("Out Pattern:")).LeftPosZ(8, 60).TopPosZ(260, 19))
+	ITEM(Upp::EditString, m_ctrlOutPattern, HSizePosZ(68, 220).TopPosZ(260, 19))
+	ITEM(Upp::Button, m_ctrlAddFiles, SetLabel(t_("Add")).RightPosZ(112, 96).TopPosZ(228, 24))
+	ITEM(Upp::Button, m_ctrlRemoveFiles, SetLabel(t_("Remove")).RightPosZ(112, 96).TopPosZ(260, 24))
+	ITEM(Upp::Button, m_ctrlAddDir, SetLabel(t_("Add Dir")).RightPosZ(8, 96).TopPosZ(228, 24))
+	ITEM(Upp::Button, m_ctrlRemoveAllFiles, SetLabel(t_("Remove All")).RightPosZ(8, 96).TopPosZ(260, 24))
+	ITEM(Upp::ArrayCtrl, m_ctrlFileList, Header(false).VertGrid(false).HorzGrid(false).MultiSelect(true).HSizePosZ(8, 8).VSizePosZ(292, 40))
+	ITEM(Upp::Button, m_ctrlConvertAll, SetLabel(t_("Convert All")).LeftPosZ(8, 96).BottomPosZ(8, 24))
+	ITEM(Upp::Button, m_ctrlConvertSel, SetLabel(t_("Convert Selected")).LeftPosZ(112, 96).BottomPosZ(8, 24))
+END_LAYOUT
+
+LAYOUT(PreviewLayout, 444, 264)
+END_LAYOUT
+
+LAYOUT(DeviceSelLayout, 308, 56)
+	ITEM(Upp::DropList, m_ctrlDevices, LeftPosZ(4, 300).TopPosZ(4, 19))
+	ITEM(Upp::Button, m_ctrlOK, SetLabel(t_("OK")).LeftPosZ(112, 84).TopPosZ(32, 20))
+	ITEM(Upp::Label, m_ctrlLblText, SetLabel(t_("TEXT")).SetAlign(ALIGN_CENTER).SetFont(StdFont().Bold()).LeftPosZ(4, 300).TopPosZ(16, 19))
+END_LAYOUT
+
+LAYOUT(BatchConvLayout, 864, 528)
+	ITEM(Upp::ProgressIndicator, m_ctrlProgress, HSizePosZ(8, 8).TopPosZ(8, 20))
+	ITEM(Upp::Button, m_ctrlStart, SetLabel(t_("Start")).LeftPosZ(8, 96).TopPosZ(32, 24))
+	ITEM(Upp::Button, m_ctrlStop, SetLabel(t_("Stop")).LeftPosZ(112, 96).TopPosZ(32, 24))
+	ITEM(Upp::ArrayCtrl, m_ctrlLog, VertGrid(false).HorzGrid(false).HSizePosZ(8, 8).VSizePosZ(60, 8))
+END_LAYOUT
+

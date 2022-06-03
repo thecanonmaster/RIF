@@ -1,0 +1,23 @@
+uses
+	CtrlLib,
+	RichText,
+	plugin/jpg;
+
+library(WIN32) D:\upp\MyApps\RIF\RadeonImageFilter\Windows\Dynamic\RadeonImageFilters.lib;
+
+library(WIN32) D:\upp\MyApps\RIF\RadeonImageFilter\Windows\Dynamic\amd_taau_ops.rml_plugin.lib;
+
+library(WIN32) D:\upp\MyApps\RIF\RadeonImageFilter\Windows\Dynamic\RadeonML.lib;
+
+file
+	backend.h options(BUILDER_OPTION) PCH,
+	backend.cpp,
+	RIF.h,
+	main.lay,
+	globals.cpp,
+	globals.h options(BUILDER_OPTION) PCH,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

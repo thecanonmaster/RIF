@@ -1,0 +1,8 @@
+LAYOUT(MainLayout, 672, 344)
+	ITEM(Upp::ArrayCtrl, m_ctrlFileList, AutoHideSb(true).Header(false).VertGrid(false).HorzGrid(false).HSizePosZ(200, 8).VSizePosZ(8, 8))
+	ITEM(Upp::Button, m_ctrlOpenFiles, SetLabel(t_("Open Files")).LeftPosZ(8, 88).TopPosZ(32, 24))
+	ITEM(Upp::Button, m_ctrlOpenDir, SetLabel(t_("Open Dir")).LeftPosZ(104, 88).TopPosZ(32, 24))
+	ITEM(Upp::Label, m_ctrlLblPattern, SetLabel(t_("File Pattern:")).LeftPosZ(8, 60).TopPosZ(8, 19))
+	ITEM(Upp::EditString, m_ctrlPattern, LeftPosZ(72, 120).TopPosZ(8, 19))
+END_LAYOUT
+
